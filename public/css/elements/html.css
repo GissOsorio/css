@@ -1,0 +1,8 @@
+.page {
+    height: 100%;
+}
+.page__logo {
+    --size: 44px;
+    height: var(--size);
+    width: var(--size);
+}
