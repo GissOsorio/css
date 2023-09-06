@@ -26,3 +26,17 @@ colorThemes.forEach((themeOption) => {
 });
 
 document.onload = setTheme();
+
+
+// Function to toggle the mobile menu
+function toggleMobileMenu() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
+}
+
+// Event listener for mobile menu toggle button
+const menuToggle = document.getElementById('menu-toggle');
+const list = document.getElementById('list');
+menuToggle.addEventListener("click", function(){
+    list.classList.toggle("hidden")
+});

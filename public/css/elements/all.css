@@ -1,2 +1,10 @@
-
+/* Media query to hide the navbar and display a list */
+@media (max-width: 768px) {
+    .header__main-nav {
+        display: none;
+    }
+}
     
+.hidden{
+    display: none;
+}

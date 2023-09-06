@@ -12,8 +12,6 @@ body {
     background: var(--clr-body-bg);
     color: var(--clr-text);
 }
-
- 
    
 .visually-hidden {
     clip: rect(0 0 0 0);
