@@ -1,5 +1,62 @@
+:root {
+    --clr-body-bg: hsl(0 0% 90%);
+    --clr-card-bg: hsl(0 0% 100%);
+    --clr-text: hsl(0 0% 15%);
+    --clr-heading: hsl(0 0% 25%);
+}
+  
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background: var(--clr-body-bg);
+    color: var(--clr-text);
+}
+
+ 
+   
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+  
+.color-picker > fieldset {
+    border: 0;
+    display: flex;
+    gap: 2rem;
+    width: fit-content;
+    background: #fff;
+    margin-inline: auto;
+    border-radius: 1rem;
+}
+  
+.color-picker input[type="radio"] {
+    appearance: none;
+    width: 0.75rem;
+    height: 0.75rem;
+    outline: 3px solid var(--radio-color, currentColor);
+    outline-offset: 3px;
+    border-radius: 50%;
+}
+  
+.color-picker input[type="radio"]:checked {
+    background-color: var(--radio-color);
+}
+  
+.color-picker input[type="radio"]#light {
+    --radio-color: gray;
+}
+
+.color-picker input[type="radio"]#dark {
+    --radio-color: #232323;
+}
+
+.dark {
+    --clr-body-bg: #232323;
+    --clr-text: hsl(0 0% 90%);
 }

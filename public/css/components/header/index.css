@@ -1,14 +1,12 @@
 .header {
   margin-top: 1.25rem;
   width: 100%;
-  color:  #333;
 }
 
 .header__main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -29,15 +27,25 @@
   display: flex;
 }
 
-.header__options-nav__list__item, .header__options-nav__list__item {
+.header__options-nav__list__item {
   margin: 0 10px;
+}
+
+.header__actions-nav__list__item {
+  margin: 0 10px;
+  background-color: var(--clr-text);
+  color: var(--clr-body-bg);
+  border-radius: 8px;
+  padding: .75rem 1.25rem;
+  text-align: center;
 }
 
 .header__options-nav__list__item__link, .header__actions-nav__list__item__link {
   text-decoration: none;
-  color:  #333;
+  color: var(--radio-color);
 }
 
-.left-nav a:hover, .right-nav a:hover {
+
+.header__options-nav__list__item :hover, .header__actions-nav__list__item :hover {
   border-bottom: 2px solid #333;
 }
